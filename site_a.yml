@@ -1,0 +1,7 @@
+---
+- hosts: local
+  gather_facts: true
+  tasks:
+    - shell: echo "site_a.yml"
+      register: echo_result
+    - debug: msg="{{ echo_result.stdout }}"

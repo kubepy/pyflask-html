@@ -2,6 +2,11 @@
 
 <html lang="en">
 <body>
-<a href="/api/start/ansible">Run_Ansible</a> 
+<!--<a href="/api/start/ansible">Run_Ansible</a><br />-->
+<form action = "/api/start/ansible" method = "POST">
+<label><input type="radio" name="button" value="site_a.yml" checked>button_a</label><br />
+<label><input type="radio" name="button" value="site_b.yml">button_b</label><br />
+<input type="submit" name="submit" value="submit" /><br />
+</form>
 </body>
 </html>
